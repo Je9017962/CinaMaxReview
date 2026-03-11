@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { Link } from 'react-router-dom'
-import { getMovies, getReviews, updateReview, deleteReview } from '../localStorage.js'
-import ThemeToggle from '../ThemeToggle.jsx'
+import { getMovies, getReviews, updateReview, deleteReview } from './localStorage.js'
+import ThemeToggle from './ThemeToggle.jsx'
 import s from './UserSubmissions.module.css'
 
 const STAR_LABELS = ['', 'Poor', 'Fair', 'Good', 'Great', 'Outstanding']
