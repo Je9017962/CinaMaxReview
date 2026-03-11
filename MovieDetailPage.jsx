@@ -1,5 +1,5 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import { getMovies, getReviewsByMovie } from '../localStorage.js'
+import { getMovies, getReviewsByMovie } from './localStorage.js'
 import { Header } from './MovieListPage.jsx'
 
 export default function MovieDetailPage() {

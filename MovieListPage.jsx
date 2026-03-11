@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { getMovies } from '../localStorage.js'
-import ThemeToggle from '../ThemeToggle.jsx'
+import { getMovies } from './localStorage.js'
+import ThemeToggle from './ThemeToggle.jsx'
 
 export default function MovieListPage() {
   const movies = getMovies()
