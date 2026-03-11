@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import ThemeToggle from '../ThemeToggle.jsx'
-import { getMovies, addReview } from '../localStorage.js'
+import ThemeToggle from './ThemeToggle.jsx'
+import { getMovies, addReview } from './localStorage.js'
 import s from './ReviewForm.module.css'
 
 // Star labels shown beneath the rating

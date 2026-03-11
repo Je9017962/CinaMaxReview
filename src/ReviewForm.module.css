@@ -1,0 +1,234 @@
+/* ReviewForm page styles */
+.shell {
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: Georgia, serif;
+}
+
+.header {
+  padding: 0 32px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-header-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--color-text);
+  font-family: Georgia, serif;
+}
+
+.logoAccent { color: var(--color-accent); }
+.logoSub { color: var(--color-text-faint); font-weight: 400; font-size: 14px; }
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navLink {
+  color: var(--color-text-faint);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: monospace;
+  transition: color 0.2s;
+}
+.navLink:hover { color: var(--color-accent); }
+
+/* Page */
+.page {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 40px 32px 60px;
+}
+
+.pageTitle {
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 900;
+  margin: 0 0 8px;
+  font-family: Georgia, serif;
+  color: var(--color-text);
+}
+
+.pageSubtitle {
+  color: var(--color-text-faint);
+  font-size: 15px;
+  margin: 0 0 32px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  background: var(--color-input-bg);
+  border: 1px solid var(--color-input-border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: var(--color-text);
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.hasError {
+  border-color: var(--color-error) !important;
+}
+
+.fieldError {
+  font-size: 12px;
+  color: var(--color-error);
+  font-family: monospace;
+}
+
+.fieldHint {
+  font-size: 12px;
+  color: var(--color-text-faint);
+  font-family: monospace;
+  text-align: right;
+}
+.fieldHint.warn { color: #d97706; }
+.fieldHint.limit { color: var(--color-error); }
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 4px 0;
+}
+
+/* Stars */
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--color-star-empty);
+  transition: color 0.15s;
+  user-select: none;
+  line-height: 1;
+}
+
+.star.active {
+  color: var(--color-star);
+}
+
+.starLabel {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  font-family: monospace;
+  min-height: 20px;
+}
+
+/* Submit */
+.submitBtn {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-deep));
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  transition: opacity 0.2s;
+}
+.submitBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Success */
+.success {
+  text-align: center;
+  padding: 80px 32px;
+}
+
+.successIcon { font-size: 56px; margin-bottom: 16px; }
+
+.successTitle {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--color-text);
+  margin: 0 0 8px;
+  font-family: Georgia, serif;
+}
+
+.successSub {
+  color: var(--color-text-muted);
+  font-size: 15px;
+  margin: 0 0 28px;
+}
+
+.successActions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-deep));
+  border-radius: 10px;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.btnSecondary {
+  background: var(--color-input-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  color: var(--color-text-muted);
+  padding: 12px 28px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
