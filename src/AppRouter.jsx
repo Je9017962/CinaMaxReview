@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
-import MovieListPage from './pages/MovieListPage.jsx'
-import MovieDetailPage from './pages/MovieDetailPage.jsx'
-import ReviewFormPage from './pages/ReviewFormPage.jsx'
-import UserSubmissionsPage from './pages/UserSubmissionsPage.jsx'
+import MovieListPage from './MovieListPage.jsx'
+import MovieDetailPage from './MovieDetailPage.jsx'
+import ReviewFormPage from './ReviewFormPage.jsx'
+import UserSubmissionsPage from './UserSubmissionsPage.jsx'
 
 export default function AppRouter() {
   return (
